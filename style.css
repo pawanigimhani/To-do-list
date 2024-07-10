@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Arial;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #112659, #668ecb);
+}
+
+.container {
+    max-width: 600px;
+    min-height: calc(100vh - 90px);
+    margin: 24px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.321);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #17143a;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 9px 18px;
+    margin-bottom: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+   text-align: center;
+   font-style: italic;
+   margin-top: 10px;
+   color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #c8d9e2b7;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.done-btn {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 4px;
+    margin-bottom: 0;
+}
+
+.done-btn:hover {
+    background-color: #218838;
+}
+
+.completed {
+    color: #28a745;
+}
+
+.delete-btn {
+    padding: 5px;
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+.delete-btn:hover {
+    background-color: #dc354570;
+}
+
+.tick-mark {
+    margin-right: 3px;
+    margin-left: auto;
+    color: #28a745;
+}
+
+.completed .done-btn,
+.completed .delete-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 60px);
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="text"] {
+        width: calc(100% - 40px);
+    }
+    li{
+        font-size: small;
+    }
+    h1{
+        font-size: x-large;
+    }
+    button{
+        font-size: small;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+    p{
+        font-size: small;
+    }
+}
